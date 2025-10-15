@@ -1,5 +1,41 @@
-// Menu
+// Menu Responsive
 let menu = document.querySelector('.menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick = () => {
+    menu.classList.toggle("move");
+    navbar.classList.toggle("open-menu");
+};
+
+// Fermer le menu au scroll
+window.onscroll = () => {
+    menu.classList.remove("move");
+    navbar.classList.remove("open-menu");
+};
+
+// ScrollReveal Animations
+const animate = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2000,
+    delay: 200,
+    reset: true  // remettre l’animation quand on rescrolle vers le haut
+});
+
+// Appliquer ScrollReveal aux sections
+animate.reveal('.home-text', { origin: 'left' });
+animate.reveal('.home-img', { origin: 'right' });
+animate.reveal('.feature-box', { interval: 200 });
+animate.reveal('.feature-menu-box', { interval: 200 });
+animate.reveal('.item-box', { interval: 200 });
+animate.reveal('.menu-box', { origin: 'bottom', interval: 200 });
+animate.reveal('.t-box', { interval: 200 });
+animate.reveal('.newsletter', { origin: 'bottom' });
+animate.reveal('.footer', { origin: 'bottom' });
+
+
+// Menu
+/* let menu = document.querySelector('.menu-icon');
 let navbar = document.querySelector('.navbar');
 
 menu.onclick = () => {
@@ -24,4 +60,4 @@ const animate = ScrollReveal({
 animate.reveal('.home-text', {origin: "left"});
 animate.reveal('.home-img', {origin: "bottom"});
 animate.reveal('.heading,.newsletter h2', {origin: "top"});
-animate.reveal("header,.feature-box,.feature-menu-box,.item-box,.m-item-box,.t-box,.newsletter", { interval: 100});
+animate.reveal("header,.feature-box,.feature-menu-box,.item-box,.m-item-box,.t-box,.newsletter", { interval: 100}); */
