@@ -2,6 +2,7 @@
 Une page vitrine moderne et responsive pour un restaurant fictif nommé Pesto.
 Elle présente les produits phares, le menu, les témoignages clients, ainsi qu’un système de navigation adaptatif pour mobile.
 
+![image alt](https://github.com/Yelle-stack/The-Grill-House/blob/8199a2a4332ee63beda69624edd6209a2bc26696/portfolio1.png)
 ## 🚀 Fonctionnalités Principales
 ### 🌐 Interface moderne
 Design aux couleurs chaudes (rouge / jaune)
